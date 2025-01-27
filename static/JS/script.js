@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const formData = new FormData(form);
       const data = {
+          Name : formData.get("name"),
           Pregnancies: formData.get("pregnancies"),
           Glucose: formData.get("glucose"),
           BloodPressure: formData.get("bloodPressure"),

@@ -1,8 +1,9 @@
 from pydantic import BaseModel
-from typing import Optional
+# from typing import Optional
 
 
 class DataModel(BaseModel):
+    Name : str
     Pregnancies: int
     Glucose: int
     BloodPressure: int
@@ -16,6 +17,7 @@ class DataModel(BaseModel):
         orm_mode = True
         schema_extra = {
             "example": {
+                "Name" : "Sruthi",
                 "Pregnancies": 6,
                 "Glucose": 148,
                 "BloodPressure": 72,
