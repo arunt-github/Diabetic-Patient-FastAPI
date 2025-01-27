@@ -9,3 +9,6 @@ FastAPI
 
 Used Query/Database
 Postgresql
+
+Used Model
+Deep learning Binary Classification model
